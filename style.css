@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+*
+
+{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#000000,#ff0000);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.Portfolio
+{
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    border-color: #ffffff;
+}
+header ul li a
+{
+    
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    background: #3c3a3a; 
+}
+
+header ul li a:hover,
+header ul li a.on
+{
+    background: #ffffff;
+    color: #000000;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#000000,transparent);
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountain
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    top: 200px;
+    color: #ffffff;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #000000;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #ffffff;
+}
+
+
+
+
+
+.contact
+{
+    background: #1A1A1D;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h2
+{
+    font-size: 60px;
+    line-height: 1;
+
+}
+.contact-text
+{
+    color: rgb(255, 77, 0);
+    font-size: var(--p-font);
+    line-height: 1.8;
+
+}
+.list
+{
+    margin-bottom: 2.8rem;
+}
+.list li
+{
+    margin-bottom: 12px;
+}
+.list li a
+{
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.contact-icon i
+{
+    height: 45px;
+    width: 45px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icon i:hover
+{
+    background: rgb(255, 77, 0);
+    color: #ffffff;
+    
+ 
+}
+.contact-form
+{
+    position: relative;
+}
+.contact-form form input,
+form textarea
+{
+    width: 100%;
+    padding: 14px;
+    background: #242625;
+    color: rgb(217, 217, 217);
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.contact-form .submit
+{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #127804;
+    color: #ffffff;
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover
+{
+    background-color: #00ff3c;
+    color: #ffffff;
+   
+   
+}
